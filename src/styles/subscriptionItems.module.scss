@@ -1,0 +1,17 @@
+.container {
+    position: relative;
+    transform: translateX(-2px);
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 26px max-content;
+    align-items: center;
+    column-gap: 10px;
+    color: rgba(137, 137, 137, 1);
+    
+}
+
+
+.icon {
+    display: grid;
+    place-items: center;
+}

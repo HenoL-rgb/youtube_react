@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: grid;
+  grid-template-columns: -webkit-min-content -webkit-min-content 1fr -webkit-min-content;
+  grid-template-columns: min-content min-content 1fr min-content;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+  padding: 0 60px 0 28px;
+}
+header .menu {
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  align-items: center;
+  padding: 0 21px 0 60px;
+}
+header .searchInput {
+  max-width: 830px;
+  position: relative;
+  background-color: rgba(235, 235, 235, 0.3);
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 18px 13px 23px;
+  border-radius: 22px;
+}
+header .searchInput .inputField {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 100%;
+  width: 96%;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+header .searchInput .inputField::-moz-placeholder {
+  color: rgba(48, 56, 76, 0.4);
+}
+header .searchInput .inputField:-ms-input-placeholder {
+  color: rgba(48, 56, 76, 0.4);
+}
+header .searchInput .inputField::placeholder {
+  color: rgba(48, 56, 76, 0.4);
+}
+header .searchInput .inputField:focus {
+  border-bottom: 1px solid rgb(133, 133, 133);
+}
+header .searchInput .inputField:focus::-moz-placeholder {
+  visibility: hidden;
+}
+header .searchInput .inputField:focus:-ms-input-placeholder {
+  visibility: hidden;
+}
+header .searchInput .inputField:focus::placeholder {
+  visibility: hidden;
+}/*# sourceMappingURL=Header.module.css.map */

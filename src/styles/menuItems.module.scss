@@ -1,0 +1,30 @@
+
+.container {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 20px max-content;
+    align-items: center;
+    column-gap: 13px;
+    color: rgba(137, 137, 137, 1);
+    & .icon {
+        opacity: 0.24;
+    }
+}
+
+.settings {
+    color: rgba(194, 194, 194, 1);
+}
+
+.active {
+    color: #FF0000;
+    fill: #FF0000;
+    & .icon {
+        opacity: 1;
+    }
+}
+
+.icon {
+    display: grid;
+    place-items: center;
+}
+

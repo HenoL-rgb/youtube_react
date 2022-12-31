@@ -1,0 +1,59 @@
+.sidebar {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: fit-content;
+}
+
+.subMenu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 29px;
+}
+
+.mainMenu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+}
+
+.menuItem {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 20px max-content;
+    align-items: center;
+    column-gap: 13px;
+    color: rgba(137, 137, 137, 1);
+    & .active {
+        color: #FF0000;
+        fill: #FF0000;
+    }
+}
+
+.subscriptions {
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+    transform: translateY(-2px);
+    & .h2Title {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        color: #000000;
+        padding-bottom: 7px;
+        transform: translateX(-2px);
+    }
+}
+
+.settings {
+    margin-top: 42px;
+}
+
+

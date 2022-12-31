@@ -1,0 +1,30 @@
+.container {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 20px -webkit-max-content;
+  grid-template-columns: 20px max-content;
+  align-items: center;
+  -moz-column-gap: 13px;
+       column-gap: 13px;
+  color: rgb(137, 137, 137);
+}
+.container .icon {
+  opacity: 0.24;
+}
+
+.settings {
+  color: rgb(194, 194, 194);
+}
+
+.active {
+  color: #FF0000;
+  fill: #FF0000;
+}
+.active .icon {
+  opacity: 1;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+}/*# sourceMappingURL=menuItems.module.css.map */
