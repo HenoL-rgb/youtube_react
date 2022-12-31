@@ -1,0 +1,7 @@
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 49px;
+    overflow-x: hidden;
+}
+

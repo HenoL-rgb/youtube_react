@@ -5,7 +5,7 @@
 }
 
 .HomePage {
-    padding: 20px 32px 40px 32px;
+    padding: 20px 0px 40px 32px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;

@@ -16,12 +16,37 @@ header .logo {
        column-gap: 3px;
   padding: 0 60px 0 28px;
 }
+header .ring {
+  position: relative;
+}
+header .ring svg {
+  margin-top: 3px;
+}
+header .ring span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 19px;
+  width: 19px;
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  border-radius: 50%;
+  background-color: #FF0000;
+  color: #FFF;
+  border: 1px solid #fff;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
 header .menu {
   display: flex;
   -moz-column-gap: 50px;
        column-gap: 50px;
   align-items: center;
-  padding: 0 21px 0 60px;
+  padding: 0 53px 0 60px;
 }
 header .searchInput {
   max-width: 830px;
