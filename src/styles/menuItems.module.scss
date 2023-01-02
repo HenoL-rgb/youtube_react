@@ -28,3 +28,15 @@
     place-items: center;
 }
 
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        width: min-content;
+        &.home {
+            padding-right: 15px;
+        }
+    }
+}

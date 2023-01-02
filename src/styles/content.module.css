@@ -4,8 +4,17 @@
 }
 
 .Content {
+    position: relative;
     padding-top: 50px;
     display: grid;
     grid-template-columns: min-content 1fr;
     column-gap: 64px;
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+    .Content {
+        display: flex;
+        padding-top: 20px;
+        flex-direction: column;
+    }
 }

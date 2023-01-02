@@ -40,14 +40,14 @@ header {
             line-height: 15px;
         }
     }
-    .menu {
+    & .menu {
         display: flex;
         column-gap: 50px;
         align-items: center;
         padding: 0 53px 0 60px;
     }
 
-    .searchInput {
+    & .searchInput {
         max-width: 830px;
         position: relative;
         background-color: rgba(235, 235, 235, 0.3);
@@ -74,6 +74,29 @@ header {
                 &::placeholder {
                     visibility: hidden;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        & .logo {
+            display: flex;
+            column-gap: 3px;
+            padding: 0;
+        }
+        & .menu {
+            & .searchBtn {
+                height: 18px;
+            }
+            padding: 0;
+            column-gap: 24px;
+            & img {
+                height: 30px;
+                width: 30px;
             }
         }
     }

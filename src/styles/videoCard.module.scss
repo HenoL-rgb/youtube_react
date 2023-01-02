@@ -67,3 +67,10 @@
         height: 250px;
     }
 }
+
+.full {
+    width: 100%;
+    & .videoContainer {
+        height: 150px;
+    }
+}

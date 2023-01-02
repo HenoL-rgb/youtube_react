@@ -89,4 +89,29 @@ header .searchInput .inputField:focus:-ms-input-placeholder {
 }
 header .searchInput .inputField:focus::placeholder {
   visibility: hidden;
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .logo {
+    display: flex;
+    -moz-column-gap: 3px;
+         column-gap: 3px;
+    padding: 0;
+  }
+  header .menu {
+    padding: 0;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+  header .menu .searchBtn {
+    height: 18px;
+  }
+  header .menu img {
+    height: 30px;
+    width: 30px;
+  }
 }/*# sourceMappingURL=Header.module.css.map */

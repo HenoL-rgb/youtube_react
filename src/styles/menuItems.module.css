@@ -27,4 +27,18 @@
 .icon {
   display: grid;
   place-items: center;
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .container.home {
+    padding-right: 15px;
+  }
 }/*# sourceMappingURL=menuItems.module.css.map */

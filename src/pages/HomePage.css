@@ -5,8 +5,15 @@
 }
 
 .HomePage {
+    position: relative;
     padding: 20px 0px 40px 32px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+    .HomePage {
+        padding: 10px 16px 0;
+    }
 }

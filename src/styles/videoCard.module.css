@@ -67,4 +67,11 @@
 }
 .large .videoContainer {
   height: 250px;
+}
+
+.full {
+  width: 100%;
+}
+.full .videoContainer {
+  height: 150px;
 }/*# sourceMappingURL=videoCard.module.css.map */

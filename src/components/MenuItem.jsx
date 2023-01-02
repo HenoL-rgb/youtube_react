@@ -14,6 +14,10 @@ export default function MenuItem({icon, title, status, changeStatus}) {
   if(title == 'Settings'){
     rootClasses.push(classes.settings)
   }
+
+  if(title == 'Home'){
+    rootClasses.push(classes.home)
+  }
   
   return (
     <div className={rootClasses.join(' ')} onClick={setActive}>

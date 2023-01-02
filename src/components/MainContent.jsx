@@ -11,7 +11,6 @@ export default function MainContent() {
         <PlayList title={'Dollie Blair'} videos={TopVideosData} image={Dollie} width={'small'}/>
         <PlayList title={'Recommended'} videos={MidVideos} width={'large'}/>
         <PlayList title={'Food & Drink'} videos={BottomVideos} image={Food} width={'small'} subtext={'Recommended channel for you'} subscribe={'2.3m'}/>
-
     </div>
   )
 }

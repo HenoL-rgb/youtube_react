@@ -7,7 +7,8 @@ export const TopVideosData = [
         date: '3 days ago',
         views: '80k',
         author: 'Dollie Blair',
-        image: 'A Brief History Of Creation.jpg'
+        image: 'A Brief History Of Creation.jpg',
+        id: 1,
     },
     {
         title: 'Selecting The Right Hotel',
@@ -15,7 +16,8 @@ export const TopVideosData = [
         date: '1 months ago',
         views: '123k',
         author: 'Dollie Blair',
-        image: 'Selecting The Right Hotel.jpg'
+        image: 'Selecting The Right Hotel.jpg',
+        id: 2,
     },
     {
         title: 'Asteroids',
@@ -23,7 +25,8 @@ export const TopVideosData = [
         date: '12 days ago',
         views: '43k',
         author: 'Dollie Blair',
-        image: 'Asteroids.jpg'
+        image: 'Asteroids.jpg',
+        id: 3,
     },
     {
         title: 'Telescopes 101',
@@ -31,7 +34,8 @@ export const TopVideosData = [
         date: '6 months ago',
         views: '11k',
         author: 'Dollie Blair',
-        image: 'Telescopes 101.jpg'
+        image: 'Telescopes 101.jpg',
+        id: 4,
     },
     {
         title: 'Medical Care Is Just',
@@ -39,7 +43,8 @@ export const TopVideosData = [
         date: '2 days ago',
         views: '18k',
         author: 'Dollie Blair',
-        image: 'Medical Care Is Just.jpg'
+        image: 'Medical Care Is Just.jpg',
+        id: 5,
     },
     {
         title: 'Moon Gazing',
@@ -47,7 +52,8 @@ export const TopVideosData = [
         date: '4 months ago',
         views: '67k',
         author: 'Dollie Blair',
-        image: 'Moon Gazing.jpg'
+        image: 'Moon Gazing.jpg',
+        id: 6,
     },
 ]
 
@@ -58,7 +64,8 @@ export const MidVideos = [
         date: '5 months ago',
         views: '34k',
         author: 'Gussie French',
-        image: 'Dude You Re Getting A Telescope.jpg'
+        image: 'Dude You Re Getting A Telescope.jpg',
+        id: 7,
     },
     {
         title: 'Moon Gazing',
@@ -66,7 +73,8 @@ export const MidVideos = [
         date: '11 months ago',
         views: '54k',
         author: 'Edward Osborne',
-        image: 'Moon Gazing 2.jpg'
+        image: 'Moon Gazing 2.jpg',
+        id: 8,
     },
     {
         title: 'Moon Gazing',
@@ -74,7 +82,8 @@ export const MidVideos = [
         date: '4 months ago',
         views: '125k',
         author: 'Dollie Blair',
-        image: 'Moon Gazing 3.jpg'
+        image: 'Moon Gazing 3.jpg',
+        id: 9,
     },
 ]
 
@@ -85,7 +94,8 @@ export const BottomVideos = [
         date: '4 months ago',
         views: '240k',
         author: 'Food & Drink',
-        image: 'Astronomy Or Astrology.jpg'
+        image: 'Astronomy Or Astrology.jpg',
+        id: 10,
     },
     {
         title: 'Advertising Outdoors',
@@ -93,7 +103,8 @@ export const BottomVideos = [
         date: '15 days ago',
         views: '13k',
         author: 'Food & Drink',
-        image: 'Advertising Outdoors.jpg'
+        image: 'Advertising Outdoors.jpg',
+        id: 11,
     },
     {
         title: 'Radio Astronomy',
@@ -101,7 +112,8 @@ export const BottomVideos = [
         date: '11 months ago',
         views: '1k',
         author: 'Food & Drink',
-        image: 'Radio Astronomy.jpg'
+        image: 'Radio Astronomy.jpg',
+        id: 12,
     },
     {
         title: 'A Good Autoresponder',
@@ -109,7 +121,8 @@ export const BottomVideos = [
         date: '2 month ago',
         views: '45k',
         author: 'Food & Drink',
-        image: 'A Good Autoresponder.jpg'
+        image: 'A Good Autoresponder.jpg',
+        id: 13,
     },
     {
         title: 'Baby Monitor Technology',
@@ -117,7 +130,8 @@ export const BottomVideos = [
         date: '7 days ago',
         views: '86k',
         author: 'Food & Drink',
-        image: 'Baby Monitor Technology.jpg'
+        image: 'Baby Monitor Technology.jpg',
+        id: 14,
     },
     {
         title: 'Asteroids',
@@ -125,7 +139,8 @@ export const BottomVideos = [
         date: '4 months ago',
         views: '123k',
         author: 'Food & Drink',
-        image: 'Asteroids.jpg'
+        image: 'Asteroids.jpg',
+        id: 15,
     },
 ]
 

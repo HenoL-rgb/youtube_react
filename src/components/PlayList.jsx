@@ -39,7 +39,7 @@ export default function PlayList({title, image, videos, width, subscribe, subtex
             </div>
 
             <ul className={classes.videos} ref={ref}>
-                {videos.map(item => <li><VideoCard item={item} width={width}></VideoCard></li>)}
+                {videos.map(item => <li key={item.id}><VideoCard item={item} width={width}></VideoCard></li>)}
             </ul>
         </div>
     )
