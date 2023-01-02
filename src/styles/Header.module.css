@@ -10,6 +10,9 @@ header {
   grid-template-columns: min-content min-content 1fr min-content;
   align-items: center;
 }
+header .burger {
+  cursor: pointer;
+}
 header .logo {
   display: flex;
   -moz-column-gap: 3px;
@@ -47,6 +50,9 @@ header .menu {
        column-gap: 50px;
   align-items: center;
   padding: 0 53px 0 60px;
+}
+header .menu svg, header .menu img {
+  cursor: pointer;
 }
 header .searchInput {
   max-width: 830px;

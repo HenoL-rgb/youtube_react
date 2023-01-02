@@ -1,9 +1,10 @@
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+    min-width: 0;
     overflow-x: scroll;
-    position: relative;
     &::-webkit-scrollbar {
         display: none;
     }
@@ -34,14 +35,17 @@
         }
     }
     & .videos {
+        position: relative;
+        min-width: 0;
+        min-height: 0;
         overflow-x: scroll;
         scroll-behavior: smooth;
-        position: relative;
         min-width: 250px;
-        column-gap: 40px;
         display: flex;
+        flex-direction: row;
         & li {
             list-style: none;
+            margin-right: 40px;
         }
         &::-webkit-scrollbar {
             display: none;
@@ -49,10 +53,12 @@
     }
 }
 
-.playlistName {
+.playlistName, .playlistName a {
     display: flex;
     min-height: 30px;
     column-gap: 20px;
+    text-decoration: none;
+    color:rgba(25, 32, 44, 1);
     align-items: center;
     & h2 {
         font-family: 'Mulish';
@@ -73,4 +79,5 @@
         color: rgba(194, 194, 194, 1);
     }
 }
+
 

@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  -moz-column-gap: 69px;
+       column-gap: 69px;
+  align-items: flex-start;
+}
+.container .mainMenu {
+  display: flex;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+  align-items: top;
+}
+.container svg {
+  margin-top: 2px;
+}/*# sourceMappingURL=ChannelMenu.module.css.map */

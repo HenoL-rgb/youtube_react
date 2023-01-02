@@ -1,0 +1,50 @@
+
+.container {
+    cursor: pointer;
+    column-gap: 13px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    & .icon {
+        opacity: 0.24;
+    }
+}
+.active {
+    color: #FF0000;
+    fill: #FF0000;
+    font-weight: 700;
+    & .icon {
+        opacity: 1;
+    }
+    &::after {
+        content: '';
+        display:block;
+        box-sizing:border-box;
+        position:absolute;
+        left: -5px;
+        bottom: -5px;
+        right: -5px;
+        border-top: 2px solid #FF0000;
+    }
+}
+
+.icon {
+    display: grid;
+    place-items: center;
+}
+
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        width: min-content;
+        &.home {
+            padding-right: 15px;
+        }
+    }
+}

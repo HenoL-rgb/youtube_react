@@ -45,6 +45,9 @@
   display: flex;
   justify-content: space-between;
 }
+.container .text .info a {
+  color: rgb(194, 194, 194);
+}
 .container .text .infoSmall {
   font-weight: 400;
   font-size: 12px;
@@ -53,6 +56,9 @@
   display: flex;
   justify-content: space-between;
   padding-top: 1px;
+}
+.container .text .infoSmall a {
+  color: rgb(194, 194, 194);
 }
 
 .small {

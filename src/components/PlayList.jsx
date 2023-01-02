@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import {Left, Right} from '../icons/icons'
 import classes from '../styles/playlist.module.css'
 import VideoCard from './VideoCard';
@@ -15,16 +16,26 @@ export default function PlayList({title, image, videos, width, subscribe, subtex
             <div className={classes.top}>
                 <div className={classes.playlistName}>
                     {image ?
-                        <img src={image}></img>
+                        <Link to={'/channel'}>
+                            <img src={image}/>
+                            <span className={classes.nameText}>
+                                <h2>{title}</h2>
+                                { subtext ?
+                                    <span className={classes.subtext}>{subtext}</span>
+                                    : ''
+                                }
+                            </span>
+                        </Link>
+                        : 
+                        <span className={classes.nameText}>
+                            <h2>{title}</h2>
+                        { subtext ?
+                            <span className={classes.subtext}>{subtext}</span>
                         : ''
-                    }
-                    <span className={classes.nameText}>
-                    <h2>{title}</h2>
-                    { subtext ?
-                        <span className={classes.subtext}>{subtext}</span>
-                        : ''
-                    }
+                        }
                     </span>
+                    }
+                    
                     
                 </div>
                 

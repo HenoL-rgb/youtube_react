@@ -118,7 +118,7 @@ export const BottomVideos = [
     {
         title: 'A Good Autoresponder',
         time: '3:40',
-        date: '2 month ago',
+        date: '2 months ago',
         views: '45k',
         author: 'Food & Drink',
         image: 'A Good Autoresponder.jpg',
@@ -139,8 +139,79 @@ export const BottomVideos = [
         date: '4 months ago',
         views: '123k',
         author: 'Food & Drink',
-        image: 'Asteroids.jpg',
+        image: 'Asteroids 2.jpg',
         id: 15,
     },
 ]
 
+export const ChannelVideos = [
+    {
+        title: 'Astronomy Or Astrology',
+        time: '7:36',
+        date: '4 months ago',
+        views: '240k',
+        author: 'Food & Drink',
+        image: 'Astronomy Or Astrology 2.jpg',
+        id: 16,
+    },
+    {
+        title: 'Advertising Outdoors',
+        time: '2:19',
+        date: '15 days ago',
+        views: '13k',
+        author: 'Food & Drink',
+        image: 'Advertising Outdoors 2.jpg',
+        id: 17,
+    },
+    {
+        title: 'Radio Astronomy',
+        time: '9:05',
+        date: '11 months ago',
+        views: '1k',
+        author: 'Food & Drink',
+        image: 'Radio Astronomy 2.jpg',
+        id: 18,
+    },
+    {
+        title: 'A Good Autoresponder',
+        time: '3:40',
+        date: '2 months ago',
+        views: '45k',
+        author: 'Food & Drink',
+        image: 'A Good Autoresponder 2.jpg',
+        id: 19,
+    },
+    {
+        title: 'Baby Monitor Technology',
+        time: '1:56',
+        date: '7 days ago',
+        views: '86k',
+        author: 'Food & Drink',
+        image: 'Baby Monitor Technology 2.jpg',
+        id: 20,
+    },
+    {
+        title: 'Asteroids',
+        time: '4:15',
+        date: '4 months ago',
+        views: '123k',
+        author: 'Food & Drink',
+        image: 'Asteroids 3.jpg',
+        id: 21,
+    },
+]
+
+export const channelMainVideo = {
+    title: 'Choosing The Best Audio Player Software For Your Computer',
+    description: `Your cheap internet-based banner advertising will become
+     one of the sought for ads there are. Today, the world of Internet 
+     advertising is rapidly evolving beyond banner ads and intrusive 
+     pop-ups. Bayles A common medium for advertising on the Internet 
+     is the use of banner ads.`,
+    time: '7:36',
+    date: '6 months ago',
+    views: '11k',
+    author: 'Margaret Phelps',
+    image: 'Choosing The Best Audio Player Software For Your Computer.jpg',
+    id: 22,
+}

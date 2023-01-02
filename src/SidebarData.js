@@ -105,3 +105,24 @@ export const Settings = {
     title: 'Settings',
     icon: <icons.Settings/>
 }
+
+export const ChannelMenuData = [
+    {
+        title: 'Home',
+    },
+    {
+        title: 'Videos',
+    },
+    {
+        title: 'Playlists',
+    },
+    {
+        title: 'Channels',
+    },
+    {
+        title: 'Discussion',
+    },
+    {
+        title: 'About',
+    },
+]

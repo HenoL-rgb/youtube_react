@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container .person {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+}
+.container .person img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.container .person .text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1px;
+  justify-content: flex-start;
+}
+.container .person .text h2 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  color: rgb(25, 32, 44);
+}
+.container .person .text span {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #C2C2C2;
+}
+.container .controls {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  align-items: center;
+}
+.container .controls button {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  border: 0;
+  background-color: #FF0000;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}/*# sourceMappingURL=ChannelTitle.module.css.map */

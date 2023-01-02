@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    column-gap: 69px;
+    align-items: flex-start;
+    & .mainMenu {
+        display: flex;
+        column-gap: 70px;
+        align-items: top;
+    }
+    & svg {
+        margin-top: 2px;
+    }
+}

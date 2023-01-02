@@ -1,9 +1,10 @@
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  min-width: 0;
   overflow-x: scroll;
-  position: relative;
 }
 .container::-webkit-scrollbar {
   display: none;
@@ -36,37 +37,41 @@
   text-align: center;
 }
 .container .videos {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
   overflow-x: scroll;
   scroll-behavior: smooth;
-  position: relative;
   min-width: 250px;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
   display: flex;
+  flex-direction: row;
 }
 .container .videos li {
   list-style: none;
+  margin-right: 40px;
 }
 .container .videos::-webkit-scrollbar {
   display: none;
 }
 
-.playlistName {
+.playlistName, .playlistName a {
   display: flex;
   min-height: 30px;
   -moz-column-gap: 20px;
        column-gap: 20px;
+  text-decoration: none;
+  color: rgb(25, 32, 44);
   align-items: center;
 }
-.playlistName h2 {
+.playlistName h2, .playlistName a h2 {
   font-family: "Mulish";
   font-weight: 700;
   font-size: 26px;
 }
-.playlistName .nameText {
+.playlistName .nameText, .playlistName a .nameText {
   display: flex;
 }
-.playlistName .subtext {
+.playlistName .subtext, .playlistName a .subtext {
   position: relative;
   font-family: "Mulish";
   font-weight: 400;

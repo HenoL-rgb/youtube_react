@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import classes from '../styles/videoCard.module.css'
 
 export default function VideoCard({item, width}) {
@@ -15,12 +16,12 @@ export default function VideoCard({item, width}) {
             {width === 'large' ? 
                 <div className={classes.infoSmall}>
                     <span>{item.views} views&nbsp;&nbsp;·&nbsp;&nbsp;{item.date}</span>     
-                    <span>{item.author}</span>
+                    <Link to={'/channel'}><span>{item.author}</span></Link>
                 </div>
             :
                 <div className={classes.info}>
                     <span>{item.views} views&nbsp;&nbsp;·&nbsp;&nbsp;{item.date}</span>     
-                    <span>{item.author}</span>
+                    <Link to={'/channel'}><span>{item.author}</span></Link>
                 </div>
             }
             

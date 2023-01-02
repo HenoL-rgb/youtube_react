@@ -60,7 +60,7 @@ export default function Sidebar() {
         )}
       </div>
       <div className={classes.settings}>
-        <MenuItem icon={Settings.icon} title={Settings.title} status={active[Settings.title]} changeStatus={() => setStatus(Settings.title)}/>
+      <Link to={`/settings`}><MenuItem icon={Settings.icon} title={Settings.title} status={active[Settings.title]} changeStatus={() => setStatus(Settings.title)}/></Link>
       </div>
     </div>
   )

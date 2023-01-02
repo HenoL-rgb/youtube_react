@@ -1,0 +1,67 @@
+.container {
+  position: relative;
+  padding-top: 5px;
+  display: flex;
+  font-family: "Mulish";
+}
+.container .videoContainer {
+  position: relative;
+  height: 250px;
+}
+.container .videoContainer img {
+  max-width: 540px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  border-radius: 14px;
+}
+.container .videoContainer .time {
+  position: absolute;
+  padding: 3px 9px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  font-size: 14px;
+  color: #FFF;
+  right: 10px;
+  bottom: 10px;
+}
+.container .text {
+  padding: 18px 0 15px 32px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+.container .text .title {
+  padding-right: 30px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 34px;
+  color: #19202C;
+}
+.container .text .description {
+  padding-top: 9px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.container .text .info {
+  justify-self: flex-end;
+  display: flex;
+  height: 100%;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #C2C2C2;
+}
+.container .text .info span {
+  align-self: flex-end;
+  width: 100%;
+}/*# sourceMappingURL=mainVideoCard.module.css.map */

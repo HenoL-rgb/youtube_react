@@ -9,6 +9,9 @@ header {
     display: grid;
     grid-template-columns: min-content min-content 1fr min-content;
     align-items: center;
+    & .burger {
+        cursor: pointer;
+    }
     & .logo {
         display: flex;
         column-gap: 3px;
@@ -45,6 +48,9 @@ header {
         column-gap: 50px;
         align-items: center;
         padding: 0 53px 0 60px;
+        & svg, img {
+            cursor: pointer;
+        }
     }
 
     & .searchInput {

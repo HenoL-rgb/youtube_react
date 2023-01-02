@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+    transform: translateY(-20px);
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    & .profileContainer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        padding-right: 53px;
+        & .channelBg {
+            border-radius: 14px;
+            height: 280px;
+            width: 100%;
+        }
+    }
+    & .topContainer {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr min-content;
+        grid-template-rows: max-content 1fr;
+        row-gap: 54px;
+        column-gap: 204px;
+        padding-right: 136px;
+        & .channels {
+            grid-row: span 2;
+        }
+        margin-bottom: 61px;
+    }
+
+    & .playList {
+        position: relative;
+    }
+}
