@@ -3,11 +3,16 @@ import MenuItem from './MenuItem'
 import ProfileItem from './ProfileItem'
 import * as icons from '../icons/icons'
 import * as profileIcons from '../icons/profileIcons'
+import { Link } from 'react-router-dom';
 import classes from '../styles/sidebar.module.css'
 import { MainMenuData, SubMenuData, SubscriptionsData, Settings } from '../SidebarData'
+import { useLocation } from 'react-router-dom'
+
 
 export default function Sidebar() {
 
+  const location = useLocation();
+  const locationPage = location.pathname.slice(1, 2).toUpperCase() + location.pathname.slice(2);
   const [active, setActive] = useState({})
   const [lastActive, setLastActive] = useState('none')
 
@@ -18,8 +23,8 @@ export default function Sidebar() {
     SubMenuData.forEach(item => {
       setActive(prev => ({...prev,  [item.title]: 'none'}))
     })
-    setActive(prev => ({...prev, ['Home']:'active'}));
-    setLastActive('Home');
+    setActive(prev => ({...prev, [locationPage]:'active'}));
+    setLastActive(locationPage);
   }, [])
 
   function setStatus(title) {
@@ -38,19 +43,19 @@ export default function Sidebar() {
     <div className={classes.sidebar} > 
       <div className={classes.mainMenu}>
         {MainMenuData.map((item) => 
-          <MenuItem key={item.title} icon={item.icon} title={item.title} status={active[item.title]} changeStatus={() => setStatus(item.title)}/>
+          <Link to={`/${item.title.toLowerCase()}`} key={item.title}><MenuItem icon={item.icon} title={item.title} status={active[item.title]} changeStatus={() => setStatus(item.title)}/></Link>
         )}
       </div>
       <div className={classes.subMenu}>
         {SubMenuData.map((item) => 
-          <MenuItem key={item.title} icon={item.icon} title={item.title} status={active[item.title]} changeStatus={() => setStatus(item.title)}></MenuItem>
-        )}
+          <Link to={`/${item.title.toLowerCase()}`} key={item.title}><MenuItem icon={item.icon} title={item.title} status={active[item.title]} changeStatus={() => setStatus(item.title)}/></Link>
+          )}
       </div>
       <div className={classes.subscriptions}>
         <h2 className={classes.h2Title}>Subscriptions</h2>
         {SubscriptionsData.map(item => 
           <div key={item.name}>
-            <ProfileItem key={item.title} icon={item.icon} title={item.name}/>
+            <Link to={'/channel'}><ProfileItem key={item.title} icon={item.icon} title={item.name} changeStatus={() => false}/></Link>
           </div>
         )}
       </div>

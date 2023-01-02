@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import classes from '../styles/menuItems.module.css'
 
 export default function MenuItem({icon, title, status, changeStatus}) {
-    
-  function setActive() {
+
+  function setActive() {  
     changeStatus(title);
   }
   const rootClasses = [classes.container];
