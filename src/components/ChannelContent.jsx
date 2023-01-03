@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Sidebar from './Sidebar'
 import classes from '../styles/channelContent.module.css'
 import MainChannelContent from './MainChannelContent'
@@ -13,7 +13,7 @@ export default function ChannelContent({isDesktop}) {
     </div>
     : 
     <div className={classes.Content}>
-        <ChannelMobileContent isDesktop={isDesktop}/>
+        <ChannelMobileContent isDesktop={false}/>
     </div>
   )
 }
