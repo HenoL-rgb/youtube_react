@@ -25,7 +25,7 @@ export default function Sidebar() {
     })
     setActive(prev => ({...prev, [locationPage]:'active'}));
     setLastActive(locationPage);
-  }, [])
+  }, [location])
 
   function setStatus(title) {
     if(title == lastActive) return;

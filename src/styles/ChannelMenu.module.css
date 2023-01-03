@@ -6,10 +6,30 @@
 }
 .container .mainMenu {
   display: flex;
+  padding-left: 5px;
   -moz-column-gap: 70px;
        column-gap: 70px;
   align-items: top;
 }
 .container svg {
   margin-top: 2px;
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  .container {
+    position: relative;
+    -moz-column-gap: normal;
+         column-gap: normal;
+    padding-right: 18px;
+  }
+  .container .mainMenu {
+    width: 100%;
+    justify-content: space-between;
+    -moz-column-gap: normal;
+         column-gap: normal;
+    padding: 0;
+  }
+  .container svg {
+    align-self: center;
+  }
 }/*# sourceMappingURL=ChannelMenu.module.css.map */

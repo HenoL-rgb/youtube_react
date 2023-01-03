@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    & .channelBg {
+        display: none;
+    }
     & .person {
         display: flex;
         align-items: center;
@@ -47,10 +50,60 @@
             font-family: 'Mulish';
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
             line-height: 20px;
+            font-size: 16px;
             text-align: center;
             color: #FFFFFF;
+        }
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        & .channelBg {
+            position: relative;
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            height: 100px;
+        }
+        & .person {
+            position: relative;
+            padding-left: 16px;
+            top: -35px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            & img {
+                height: 70px;
+                width: 70px;
+            }
+            & .text {
+                row-gap: 4px;
+                & h2{
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+                & span {
+                    font-size: 12px;
+                }
+            }
+        }
+        & .controls {
+            padding-left: 16px;
+            position: relative;
+            top: -14px;
+            & svg {
+                display: none;
+            }
+            & button {
+                font-size: 12px;
+                line-height: 15px;
+                padding: 9px 17px 10px 17px;
+            }
         }
     }
 }

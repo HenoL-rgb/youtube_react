@@ -2,8 +2,8 @@
     position: relative;
     transform: translateY(-20px);
     display: flex;
-    flex-direction: column;
     overflow-x: hidden;
+    flex-direction: column;
     & .profileContainer {
         display: flex;
         flex-direction: column;

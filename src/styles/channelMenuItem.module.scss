@@ -43,8 +43,7 @@
         flex-direction: column;
         row-gap: 5px;
         width: min-content;
-        &.home {
-            padding-right: 15px;
-        }
+        font-size: 14px;
+        line-height: 18px;
     }
 }

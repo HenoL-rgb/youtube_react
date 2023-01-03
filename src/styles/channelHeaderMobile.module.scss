@@ -1,0 +1,25 @@
+.container {
+   display: flex; 
+   padding: 12px 20px 23px 16px;
+   justify-content: space-between;
+   & .logo {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+   }
+    & a {
+        & h2 {
+            text-decoration: none;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #19202C;
+        }
+    }
+    & .searchBtn, .dots {
+        display: flex;
+        align-items: center;
+    }
+}

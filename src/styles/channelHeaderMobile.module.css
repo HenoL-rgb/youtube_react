@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  padding: 12px 20px 23px 16px;
+  justify-content: space-between;
+}
+.container .logo {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.container a h2 {
+  text-decoration: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #19202C;
+}
+.container .searchBtn, .container .dots {
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=channelHeaderMobile.module.css.map */

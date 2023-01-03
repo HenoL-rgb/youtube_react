@@ -45,8 +45,7 @@
     width: -webkit-min-content;
     width: -moz-min-content;
     width: min-content;
-  }
-  .container.home {
-    padding-right: 15px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }/*# sourceMappingURL=channelMenuItem.module.css.map */
