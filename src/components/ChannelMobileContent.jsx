@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import classes from '../styles/channelMobileContent.module.css'
 import ChannelMenu from './ChannelMenu'
 import ChannelTitle from './ChannelTitle'
@@ -12,7 +12,7 @@ export default function ChannelMobileContent({isDesktop}) {
     <div className={classes.container}>
         <ChannelTitle/>
         <div className={classes.content}>
-          <ChannelMenu isDesktop={isDesktop}/>
+          <ChannelMenu isDesktop={false}/>
           <div className={classes.playList}>
             <MobilePlayList videos={ChannelVideos} width={'small'}/>
           </div>

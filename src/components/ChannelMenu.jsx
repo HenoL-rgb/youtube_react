@@ -7,7 +7,6 @@ import classes from '../styles/ChannelMenu.module.css'
 import { ChannelMenuData } from '../SidebarData'
 
 export default function ChannelMenu({isDesktop}) {
-
   const [active, setActive] = useState({})
   const [lastActive, setLastActive] = useState('none')
 
@@ -30,7 +29,6 @@ export default function ChannelMenu({isDesktop}) {
 
     setActive(prev => ({...prev, [title]: newStatus}))
   }
-
   return (
     <div className={classes.container} > 
           {

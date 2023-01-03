@@ -5,9 +5,12 @@ import MobileContent from '../components/MobileContent';
 import ChannelContent from '../components/ChannelContent';
 import ChannelHeaderMobile from '../components/ChannelHeaderMobile';
 import ChannelMobileContent from '../components/ChannelMobileContent';
+import { useEffect, useState } from 'react';
 
 function ChannelPage() {
   const {isDesktop, isMobile, isTablet} = useViewport();
+
+  
   return (
     isDesktop ?
     <div className="ChannelPage">

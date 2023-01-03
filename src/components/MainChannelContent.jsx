@@ -16,7 +16,7 @@ export default function MainChannelContent() {
           <ChannelTitle/>
         </div>
       <div className={classes.topContainer}>
-          <ChannelMenu/>
+          <ChannelMenu isDesktop={true}/>
           <div className={classes.channels}>
             <RecommendedChannels/>
           </div>

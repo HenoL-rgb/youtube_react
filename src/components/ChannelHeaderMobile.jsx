@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import classes from '../styles/channelHeaderMobile.module.css';
 
-export default function ChannelHeaderMobile() {
+export default function ChannelHeaderMobile({isDesktop}) {
   return (
     <div className={classes.container}>
         <Link to={'/home'}>
