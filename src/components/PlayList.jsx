@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import {Left, Right} from '../icons/icons'
-import classes from '../styles/playlist.module.css'
+import classes from '../styles/playlist.module.scss'
 import VideoCard from './VideoCard';
 
 export default function PlayList({title, image, videos, width, subscribe, subtext}) {

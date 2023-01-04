@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from '../styles/MobilePlayList.module.css'
+import classes from '../styles/MobilePlayList.module.scss'
 import VideoCard from './VideoCard';
 
 export default function MobilePlayList({videos}) {

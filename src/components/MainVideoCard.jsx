@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import classes from '../styles/mainVideoCard.module.css'
+import classes from '../styles/mainVideoCard.module.scss'
 
 export default function MainVideoCard({item}) {
   return (

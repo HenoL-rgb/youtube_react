@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import classes from '../styles/channelMobileContent.module.css'
+import classes from '../styles/channelMobileContent.module.scss'
 import ChannelMenu from './ChannelMenu'
 import ChannelTitle from './ChannelTitle'
-import PlayList from './PlayList'
 import { ChannelVideos } from '../VideosData';
 import MobilePlayList from './MobilePlayList'
 import Footer from './Footer'

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import classes from '../styles/menuItems.module.css'
+import classes from '../styles/menuItems.module.scss'
 
 export default function MenuItem({icon, title, status, changeStatus}) {
 

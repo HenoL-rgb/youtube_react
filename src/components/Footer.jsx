@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import MenuItem from './MenuItem'
-import ProfileItem from './ProfileItem'
-import * as icons from '../icons/icons'
-import * as profileIcons from '../icons/profileIcons'
-import classes from '../styles/footer.module.css'
+import classes from '../styles/footer.module.scss'
 import { MainMenuData, SubMenuData } from '../SidebarData'
+import { useLocation } from 'react-router-dom'
 
 export default function Footer() {
 
+  const location = useLocation();
+  const locationPage = location.pathname.slice(1, 2).toUpperCase() + location.pathname.slice(2);
   const [active, setActive] = useState({})
   const [lastActive, setLastActive] = useState('none')
 
@@ -15,9 +15,9 @@ export default function Footer() {
     MainMenuData.forEach(item => {
       setActive(prev => ({...prev,  [item.title]: 'none'}))
     })
-    setActive(prev => ({...prev, ['Home']:'active'}));
-    setLastActive('Home');
-  }, [])
+    setActive(prev => ({...prev, [locationPage]:'active'}));
+    setLastActive(locationPage);
+  }, [location])
 
   function setStatus(title) {
     if(title == lastActive) return;

@@ -1,6 +1,6 @@
 import React from 'react'
 import { RecommendedChannelsData } from '../RecommendedChannelsData'
-import classes from '../styles/RecommendedChannels.module.css'
+import classes from '../styles/RecommendedChannels.module.scss'
 
 export default function RecommendedChannels() {
   return (

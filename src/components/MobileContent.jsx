@@ -3,7 +3,7 @@ import { BottomVideos, MidVideos, TopVideosData } from '../VideosData'
 import MobilePlayList from './MobilePlayList'
 import Dollie from '../icons/Dollie.jpg';
 import Food from '../icons/Food&Drink.jpg'
-import classes from '../styles/mobileContent.module.css'
+import classes from '../styles/mobileContent.module.scss'
 import Footer from './Footer';
 
 export default function MobileContent() {

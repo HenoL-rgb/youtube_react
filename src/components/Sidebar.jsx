@@ -4,7 +4,7 @@ import ProfileItem from './ProfileItem'
 import * as icons from '../icons/icons'
 import * as profileIcons from '../icons/profileIcons'
 import { Link } from 'react-router-dom';
-import classes from '../styles/sidebar.module.css'
+import classes from '../styles/sidebar.module.scss'
 import { MainMenuData, SubMenuData, SubscriptionsData, Settings } from '../SidebarData'
 import { useLocation } from 'react-router-dom'
 

@@ -1,12 +1,22 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-import classes from '../styles/videoCard.module.css'
+import { Link, Navigate, redirect, useNavigate } from 'react-router-dom';
+import classes from '../styles/videoCard.module.scss'
 
 export default function VideoCard({item, width}) {
     const rootClasses = [classes.container];
     rootClasses.push(classes[width]);
+    const navigate = useNavigate();
+
+    function redirectTo(target) {
+        console.log('got')
+        if(target.id == 'author'){
+            navigate('/channel');
+            return;
+        }
+        navigate('/video');
+    }
   return (
-    <div className={rootClasses.join(' ')}>
+    <div className={rootClasses.join(' ')}  onClick={(e) => redirectTo(e.target)}>
         <div className={classes.videoContainer}>
             <img src={require(`../images/${item.image}`)}></img>
             <div className={classes.time}>{item.time}</div>
@@ -16,12 +26,12 @@ export default function VideoCard({item, width}) {
             {width === 'large' ? 
                 <div className={classes.infoSmall}>
                     <span>{item.views} views&nbsp;&nbsp;·&nbsp;&nbsp;{item.date}</span>     
-                    <Link to={'/channel'}><span>{item.author}</span></Link>
+                    <span id='author'>{item.author}</span>
                 </div>
             :
                 <div className={classes.info}>
                     <span>{item.views} views&nbsp;&nbsp;·&nbsp;&nbsp;{item.date}</span>     
-                    <Link to={'/channel'}><span>{item.author}</span></Link>
+                    <span id='author'>{item.author}</span>
                 </div>
             }
             
