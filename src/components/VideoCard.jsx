@@ -8,7 +8,6 @@ export default function VideoCard({item, width}) {
     const navigate = useNavigate();
 
     function redirectTo(target) {
-        console.log('got')
         if(target.id == 'author'){
             navigate('/channel');
             return;
@@ -28,8 +27,12 @@ export default function VideoCard({item, width}) {
                     <span>{item.views} views&nbsp;&nbsp;·&nbsp;&nbsp;{item.date}</span>     
                     <span id='author'>{item.author}</span>
                 </div>
-            :
+            : width === 'next' ?
                 <div className={classes.info}>
+                    <span>{item.views} views</span>     
+                    <span id='author'>{item.author}</span>
+                </div>
+            :   <div className={classes.info}>
                     <span>{item.views} views&nbsp;&nbsp;·&nbsp;&nbsp;{item.date}</span>     
                     <span id='author'>{item.author}</span>
                 </div>

@@ -215,3 +215,42 @@ export const channelMainVideo = {
     image: 'Choosing The Best Audio Player Software For Your Computer.jpg',
     id: 22,
 }
+
+export const playerNextVideos = [
+    {
+        title: 'Baby Monitor Technology',
+        time: '8:00',
+        date: '4 months ago',
+        views: '123k',
+        author: 'Dollie Blair',
+        image: 'Astronomy Or Astrology.jpg',
+        id: 23,
+    },
+    {
+        title: 'A Good Autoresponder',
+        time: '8:00',
+        date: '4 months ago',
+        views: '123k',
+        author: 'Dollie Blair',
+        image: 'Advertising Outdoors.jpg',
+        id: 24,
+    },
+    {
+        title: 'Selecting The Right Hotel',
+        time: '8:00',
+        date: '4 months ago',
+        views: '123k',
+        author: 'Dollie Blair',
+        image: 'Baby Monitor Technology 2.jpg',
+        id: 25,
+    },
+    {
+        title: 'Selecting The Right Hotel',
+        time: '8:00',
+        date: '4 months ago',
+        views: '123k',
+        author: 'Dollie Blair',
+        image: 'A Good Autoresponder.jpg',
+        id: 26,
+    },
+]

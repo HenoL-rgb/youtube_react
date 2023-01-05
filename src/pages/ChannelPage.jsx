@@ -9,14 +9,14 @@ function ChannelPage() {
 
   
   return (
-    isDesktop ?
     <div className="ChannelPage">
-      <Header isDesktop={isDesktop}/>
-      <ChannelContent isDesktop={isDesktop}/>
-    </div>
-    :
-    <div className="ChannelPage">
-      <ChannelHeaderMobile isDesktop={isDesktop}/>
+      {
+        isDesktop ? 
+        <Header isDesktop={isDesktop}/>
+        :
+        <ChannelHeaderMobile isDesktop={isDesktop}/>
+      }
+
       <ChannelContent isDesktop={isDesktop}/>
     </div>
   );

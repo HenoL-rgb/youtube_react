@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import classes from '../styles/videoControls.module.scss'
+import React, { useEffect, useRef, useState } from 'react'
+import classes from '../styles/VideoControlsMobile.module.scss'
 import {Play, Pause, FullScreen, Next, Volume, Subtitles, VideoSettings, Size} from '../icons/icons'
 
 export default function VideoControls(
-    {playing, volume, duration, playedSeconds, handlePlay, handleVolume, handleProgress, handleFullScreen}
+    {playing, visibility, duration, playedSeconds, handlePlay, handleVolume, handleProgress, }
     ) {
 
     const [currentTime, setCurrentTime] = useState(0);
@@ -12,6 +12,13 @@ export default function VideoControls(
       changeCurrentTime();
     
     }, [playedSeconds])
+
+    useEffect(() => {
+        const isVisible = visibility == true ? 'visible' : 'hidden'
+        const opacity = visibility ? 1 : 0;
+        refContainer.current.style.visibility = isVisible;
+        refContainer.current.style.opacity = opacity;
+      }, [visibility])
     
     useEffect(() => {
         const time = new Date();
@@ -35,38 +42,20 @@ export default function VideoControls(
         };
     };
 
+    const refContainer = useRef();
   return (
-    <div className={classes.container}>
+    <div className={classes.container} ref={refContainer}>
+        
+        <div onClick={handlePlay}>
+            {playing ? <Pause/> : <Play/>}
+        </div>
         <div className={classes.time}>
-            <div className={classes.text}>
-                <span>{currentTime}</span>
-                <span>{fullTime}</span>
-            </div>
+            <span>{currentTime}</span>
             <input type={'range'} value={playedSeconds} style={getBackgroundSize(playedSeconds, duration)}
                 max={duration} min='0' step='0.05' onChange={(e) => handleProgress(e.target.value)}/>
+            <span>{fullTime}</span>
         </div>
-        <div className={classes.controllers}>
-            <div className={classes.leftControllers}>
-                <div className={classes.playBtn} onClick={handlePlay}>
-                    {playing ? <Pause/> : <Play/>}
-                </div>
-                <Next/>
-                <div className={classes.volume}>
-                    <Volume/>
-                    <input type={'range'} value={volume} style={getBackgroundSize(volume, 1)} max='1' min='0' step='0.01' onChange={handleVolume}/>
-                </div>
-            </div>
-            <div className={classes.rightControllers}>
-                <Subtitles/>
-                <VideoSettings/>
-                <Size/>
-                <div onClick={handleFullScreen} className={classes.fullScreen}>
-                    <FullScreen/>
-                </div>
-            </div>
-            
-        </div>
-        
+        <Volume/>
     </div>
   )
 }

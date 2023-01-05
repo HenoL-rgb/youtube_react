@@ -1,0 +1,172 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: min-content 1fr;
+    column-gap: 40px;
+    row-gap: 38px;
+    & .videoContainer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        max-width: 1363px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+        & .text {
+            display: flex;
+            flex-direction: column;
+            row-gap: 4px;
+            & h2 {
+                font-family: 'Mulish';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 45px;
+                color: #192646;
+            }
+            & .info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                & span {
+                    font-family: 'Mulish';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 25px;
+                    color: #C2C2C2;
+                    padding-top: 2px;
+                }
+                & .controllers {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 10px;
+                    & button {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 8px;
+                        outline: 0;
+                        border: 0;
+                        padding: 10px 20px;
+                        border-radius: 20px;
+                        background: rgba(235, 235, 235, 0.3);
+                        & span {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #192646;
+                            padding: 0;
+                        }
+                    }
+                    & .more {
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+    & .nextVideosContainer {
+        grid-row: span 2;
+        padding-right: 53px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        & .title {
+            display: flex;
+            justify-content: space-between;
+            height: min-content;
+            & h2{
+                font-family: 'Mulish';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 45px;
+                color: #19202C;
+            }
+            & .autoplay {
+                display: flex;
+                align-self: flex-end;
+                align-items: center;
+                column-gap: 11px;
+                padding-bottom: 1px;
+                & span {
+                    font-family: 'Mulish';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #19202C;
+                }
+            }
+        }
+    }
+
+    & .authorContainer {
+        display: flex;
+        justify-content: space-between;
+        & .author {
+            display: flex;
+            column-gap: 12px;
+            transform: translateX(-5px);
+            & img {
+                width: 80px;
+                height: 80px;
+            }
+            & .authorInfo {
+                max-width: 810px;
+                display: flex;
+                flex-direction: column;
+                font-family: 'Mulish';
+                font-style: normal;
+                & h2 {
+                    
+                    font-weight: 700;
+                    font-size: 26px;
+                    line-height: 33px;
+                    color: #19202C;
+                }
+                & .published {
+                    padding-top: 4px;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #C2C2C2;
+                }
+                & .description {
+                    padding: 14px 0 15px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: rgba($color: #000000, $alpha: 0.6);
+                }
+                & .showMore {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 25px;
+                    color: #C2C2C2;
+                }
+            }
+        }
+
+        & .subscribe {
+            & button {
+                border: 0;
+                outline: 0;
+                padding: 10px 20px;
+                font-family: 'Mulish';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                color: #FFFFFF;
+                background-color: #FF0000;
+                border-radius: 20px;
+            }
+        }
+    }
+}

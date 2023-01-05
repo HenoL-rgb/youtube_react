@@ -4,14 +4,15 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    padding: 0 33px 33px;
+    padding: 0 33px 30px;
+    
     & .time {
         display: flex;
         flex-direction: column;
         row-gap: 20px;
         & input[type="range"] {
             -webkit-appearance: none;
-            margin-right: 15px;
+            appearance: none;
             width: 100%;
             height: 10px;
             background: rgba(255, 255, 255, 0.2);
@@ -29,12 +30,9 @@
             cursor: pointer;
             box-shadow: 0 0 2px 0 #555;
             transition: 0.1s all ease-in-out;
-            &:hover {
-                opacity: 1;
-            }
         }
         & input[type="range"]:hover::-webkit-slider-thumb {
-            opacity: 1;
+            opacity: 0;
         }
         & .text {
             font-family: 'Mulish';
@@ -53,6 +51,7 @@
         padding: 0 10px;
         & .leftControllers {
             display: flex;
+            height: 100%;
             align-items: center;
             column-gap: 40px;
             & .volume {
@@ -61,7 +60,9 @@
                 column-gap: 20px;
                 & input[type="range"] {
                     -webkit-appearance: none;
+                    appearance: none;
                     margin-right: 15px;
+                    outline: none;
                     width: 86px;
                     height: 8px;
                     background: rgba(255, 255, 255, 0.2);
@@ -79,8 +80,9 @@
         }
         & .rightControllers {
             display: flex;
+            height: 100%;
             align-items: center;
-            column-gap: 40px;
+            column-gap: 25px;
             & .fullScreen {
                 display: flex;
                 align-items: center;

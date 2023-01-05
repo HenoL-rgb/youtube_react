@@ -18,8 +18,13 @@
         color: #19202C;
         }
     }
-    & .searchBtn, .dots {
+    & .btns {
         display: flex;
-        align-items: center;
+        column-gap: 45px;
+        & .searchBtn, .dots {
+            display: flex;
+            align-items: center;
+        }
     }
+
 }

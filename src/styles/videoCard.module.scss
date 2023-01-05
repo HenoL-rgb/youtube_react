@@ -81,3 +81,32 @@
         height: 150px;
     }
 }
+
+.next {
+    width: 367px;
+    row-gap: 13px;
+    & .videoContainer {
+        height: 213px;
+    }
+    & .text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 11px;
+        & .title {
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 33px;
+        }
+        & .info{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            color: rgba(194, 194, 194, 1);
+            display: flex;
+            justify-content: space-between;
+            & a {
+                color: rgba(194, 194, 194, 1);
+            }
+        }
+    }
+}

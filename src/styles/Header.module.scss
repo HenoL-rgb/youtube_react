@@ -89,14 +89,16 @@ header {
     header {
         display: flex;
         justify-content: space-between;
+        padding: 10px 16px 0;
         & .logo {
             display: flex;
             column-gap: 3px;
-            padding: 0;
+            padding: 0 0 2px 0;
         }
         & .menu {
             & .searchBtn {
-                height: 18px;
+                display: flex;
+                align-items: center;
             }
             padding: 0;
             column-gap: 24px;
@@ -104,6 +106,17 @@ header {
                 height: 30px;
                 width: 30px;
             }
+        }
+        & .playerMenu {
+            height: 30px;
+            padding-right: 4px;
+            & .searchBtn, .dots {
+                display: flex;
+                align-items: center;
+            }
+            display: flex;
+            column-gap: 45px;
+            align-items: center;
         }
     }
 }
