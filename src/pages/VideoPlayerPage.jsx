@@ -4,7 +4,7 @@ import useViewport from '../hooks/useViewport';
 import PlayerContent from '../components/VideoPlayerPageComponents/PlayerContent';
 
 function VideoPlayerPage() {
-  const {isDesktop, isMobile, isTablet} = useViewport();
+  const {isDesktop} = useViewport();
   return (
     <div className="VideoPlayerPage">
       <Header isDesktop={isDesktop} page={'player'}/>

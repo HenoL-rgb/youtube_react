@@ -1,5 +1,4 @@
 import React from 'react'
-import VideoPlayer from './VideoPlayer'
 import classes from '../../styles/playerContent.module.scss'
 import MainPlayerContent from './MainPlayerContent'
 import MobilePlayerContent from './MobilePlayerContent'

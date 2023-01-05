@@ -5,7 +5,11 @@
     flex-direction: column;
     row-gap: 20px;
     padding: 0 33px 30px;
-    
+    opacity: 0;
+    transition: 0.2s all ease-in-out;
+    &:hover {
+        opacity: 1;
+    }
     & .time {
         display: flex;
         flex-direction: column;

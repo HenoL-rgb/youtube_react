@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import classes from '../../styles/videoControls.module.scss'
 import {Play, Pause, FullScreen, Next, Volume, Subtitles, VideoSettings, Size} from '../../icons/icons'
 
 export default function VideoControls(
-    {playing, volume, duration, playedSeconds, handlePlay, handleVolume, handleProgress, handleFullScreen}
+    {playing, volume, duration, playedSeconds, handlePlay, 
+        handleVolume, handleProgress, handleFullScreen, classN}
     ) {
 
     const [currentTime, setCurrentTime] = useState(0);
@@ -12,7 +13,7 @@ export default function VideoControls(
       changeCurrentTime();
     
     }, [playedSeconds])
-    
+
     useEffect(() => {
         const time = new Date();
         time.setSeconds(duration);
@@ -36,7 +37,7 @@ export default function VideoControls(
     };
 
   return (
-    <div className={classes.container}>
+    <div className={[classes.container, classN].join(' ')} >
         <div className={classes.time}>
             <div className={classes.text}>
                 <span>{currentTime}</span>

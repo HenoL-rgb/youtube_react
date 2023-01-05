@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import classes from '../../styles/VideoControlsMobile.module.scss'
-import {Play, Pause, FullScreen, Next, Volume, Subtitles, VideoSettings, Size} from '../../icons/icons'
+import {Play, Pause, Volume} from '../../icons/icons'
 
 export default function VideoControls(
     {playing, visibility, duration, playedSeconds, handlePlay, handleVolume, handleProgress, }
@@ -14,11 +14,14 @@ export default function VideoControls(
     }, [playedSeconds])
 
     useEffect(() => {
-        const isVisible = visibility == true ? 'visible' : 'hidden'
-        const opacity = visibility ? 1 : 0;
+        const isVisible = playing === false ? 'visible' 
+        : visibility === true ? 'visible' : 'hidden'
+        const opacity = playing === false ? 1
+        : visibility ? 1 : 0;
+
         refContainer.current.style.visibility = isVisible;
         refContainer.current.style.opacity = opacity;
-      }, [visibility])
+    }, [visibility, playing])
     
     useEffect(() => {
         const time = new Date();

@@ -78,6 +78,7 @@ export default function VideoPlayer({source = 'video.mp4', isDesktop = true}) {
             handlePlay={handlePlay} 
             handleVolume={handleVolume}
             handleFullScreen={handleFullScreen}
+            classN={classes.desktop}
             />
             :
             <VideoControlsMobile 

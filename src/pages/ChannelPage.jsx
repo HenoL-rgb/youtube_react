@@ -5,7 +5,7 @@ import ChannelContent from '../components/ChannelPageComponents/ChannelContent';
 import ChannelHeaderMobile from '../components/ChannelPageComponents/ChannelHeaderMobile';
 
 function ChannelPage() {
-  const {isDesktop, isMobile, isTablet} = useViewport();
+  const {isDesktop} = useViewport();
 
   
   return (

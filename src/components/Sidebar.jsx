@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import MenuItem from './MenuItem'
 import ProfileItem from './ProfileItem'
-import * as icons from '../icons/icons'
-import * as profileIcons from '../icons/profileIcons'
 import { Link } from 'react-router-dom';
 import classes from '../styles/sidebar.module.scss'
 import { MainMenuData, SubMenuData, SubscriptionsData, Settings } from '../SidebarData'

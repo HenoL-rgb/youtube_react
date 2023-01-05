@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import classes from '../../styles/channelMobileContent.module.scss'
 import ChannelMenu from './ChannelMenu'
 import ChannelTitle from './ChannelTitle'
