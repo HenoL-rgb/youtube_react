@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import ReactPlayer from "react-player";
 import VideoControls from "./VideoControls";
 import VideoControlsMobile from "./VideoControlsMobile";
-import classes from '../styles/videoPlayer.module.scss';
+import classes from '../../styles/videoPlayer.module.scss';
 import screenfull from "screenfull"
 
 
@@ -53,7 +53,7 @@ export default function VideoPlayer({source = 'video.mp4', isDesktop = true}) {
     <div className={classes.container} ref={refPlayerContainer} >
         <div className={classes.videoContainer} onClick={handlePlayContainer}>
           <ReactPlayer
-              url={require(`../video/${source}`)}
+              url={require(`../../video/${source}`)}
               playing={playing}
               controls={false}
               width='100%'

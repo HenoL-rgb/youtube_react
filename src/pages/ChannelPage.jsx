@@ -1,8 +1,8 @@
 import './ChannelPage.css';
 import Header from '../components/Header';
 import useViewport from '../hooks/useViewport';
-import ChannelContent from '../components/ChannelContent';
-import ChannelHeaderMobile from '../components/ChannelHeaderMobile';
+import ChannelContent from '../components/ChannelPageComponents/ChannelContent';
+import ChannelHeaderMobile from '../components/ChannelPageComponents/ChannelHeaderMobile';
 
 function ChannelPage() {
   const {isDesktop, isMobile, isTablet} = useViewport();

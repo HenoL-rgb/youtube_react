@@ -1,11 +1,11 @@
 import React from 'react'
-import classes from '../styles/mobilePlayerContent.module.scss'
+import classes from '../../styles/mobilePlayerContent.module.scss'
 import VideoPlayer from './VideoPlayer'
-import { ArrowDown, Like, Dislike, Share } from '../icons/icons'
+import { ArrowDown, Like, Dislike, Share } from '../../icons/icons'
 import PlayerNextVideosPlaylist from './PlayerNextVideosPlaylist'
-import AntSwitch from './mySwitch'
-import { playerNextVideos } from '../VideosData'
-import Footer from './Footer'
+import AntSwitch from '../mySwitch'
+import { playerNextVideos } from '../../VideosData'
+import Footer from '../Footer'
 
 export default function MobilePlayerContent() {
   return (
@@ -39,7 +39,7 @@ export default function MobilePlayerContent() {
 
         <div className={classes.authorInfo}>
             <div className={classes.author}>
-                <img src={require('../icons/fooddrink.jpg')}/>
+                <img src={require('../../icons/fooddrink.jpg')}/>
                 <div className={classes.text}>
                     <h2>Food & Drink</h2>
                     <span>245K subscribed</span>

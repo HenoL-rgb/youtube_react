@@ -1,9 +1,9 @@
 import React from 'react'
-import { BottomVideos, MidVideos, TopVideosData } from '../VideosData'
-import PlayList from './PlayList'
-import Dollie from '../icons/Dollie.jpg';
-import Food from '../icons/Food&Drink.jpg'
-import classes from '../styles/mainContent.module.css'
+import { BottomVideos, MidVideos, TopVideosData } from '../../VideosData'
+import PlayList from '../PlayList'
+import Dollie from '../../icons/Dollie.jpg';
+import Food from '../../icons/Food&Drink.jpg'
+import classes from '../../styles/mainContent.module.css'
 
 export default function MainContent() {
   return (

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ChannelMenuItem from './ChannelMenuItem'
-import classes from '../styles/ChannelMenu.module.scss'
-import { ChannelMenuData } from '../SidebarData'
+import classes from '../../styles/ChannelMenu.module.scss'
+import { ChannelMenuData } from '../../SidebarData'
 
 export default function ChannelMenu({isDesktop}) {
   const [active, setActive] = useState({})

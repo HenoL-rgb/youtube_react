@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
-import Sidebar from './Sidebar'
-import classes from '../styles/channelContent.module.css'
+import React from 'react'
+import Sidebar from '../Sidebar'
+import classes from '../../styles/channelContent.module.css'
 import MainChannelContent from './MainChannelContent'
 import ChannelMobileContent from './ChannelMobileContent'
 

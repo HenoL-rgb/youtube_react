@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import classes from '../styles/channelMobileContent.module.scss'
+import classes from '../../styles/channelMobileContent.module.scss'
 import ChannelMenu from './ChannelMenu'
 import ChannelTitle from './ChannelTitle'
-import { ChannelVideos } from '../VideosData';
-import MobilePlayList from './MobilePlayList'
-import Footer from './Footer'
+import { ChannelVideos } from '../../VideosData';
+import MobilePlayList from '../MobilePlayList'
+import Footer from '../Footer'
 
 export default function ChannelMobileContent({isDesktop}) {
   return (

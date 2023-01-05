@@ -1,7 +1,7 @@
 import './VideoPlayerPage.css';
 import Header from '../components/Header';
 import useViewport from '../hooks/useViewport';
-import PlayerContent from '../components/PlayerContent';
+import PlayerContent from '../components/VideoPlayerPageComponents/PlayerContent';
 
 function VideoPlayerPage() {
   const {isDesktop, isMobile, isTablet} = useViewport();

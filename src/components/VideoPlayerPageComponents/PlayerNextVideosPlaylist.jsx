@@ -1,6 +1,6 @@
 import React from 'react';
-import classes from '../styles/PlayerNextVideosPlaylist.module.scss'
-import VideoCard from './VideoCard';
+import classes from '../../styles/PlayerNextVideosPlaylist.module.scss'
+import VideoCard from '../VideoCard';
 
 export default function PlayerNextVideosPlaylist({videos, width}) {
   return (

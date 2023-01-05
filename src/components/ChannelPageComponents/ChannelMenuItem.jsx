@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import classes from '../styles/channelMenuItem.module.scss'
+import classes from '../../styles/channelMenuItem.module.scss'
 
 export default function MenuItem({title, status, changeStatus}) {
 

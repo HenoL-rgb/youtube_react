@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import classes from '../styles/videoControls.module.scss'
-import {Play, Pause, FullScreen, Next, Volume, Subtitles, VideoSettings, Size} from '../icons/icons'
+import classes from '../../styles/videoControls.module.scss'
+import {Play, Pause, FullScreen, Next, Volume, Subtitles, VideoSettings, Size} from '../../icons/icons'
 
 export default function VideoControls(
     {playing, volume, duration, playedSeconds, handlePlay, handleVolume, handleProgress, handleFullScreen}

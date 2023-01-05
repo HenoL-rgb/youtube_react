@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import classes from '../styles/channelHeaderMobile.module.scss';
+import classes from '../../styles/channelHeaderMobile.module.scss';
 
 export default function ChannelHeaderMobile({isDesktop}) {
   return (

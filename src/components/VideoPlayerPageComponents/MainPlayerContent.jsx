@@ -1,12 +1,10 @@
 import React from 'react'
 import VideoPlayer from './VideoPlayer'
-import classes from '../styles/mainPlayerContent.module.scss'
-import {Like, Dislike, Share, More} from '../icons/icons'
-import { playerNextVideos } from '../VideosData'
-import MobilePlayList from './MobilePlayList'
+import classes from '../../styles/mainPlayerContent.module.scss'
+import {Like, Dislike, Share, More} from '../../icons/icons'
+import { playerNextVideos } from '../../VideosData'
 import PlayerNextVideosPlaylist from './PlayerNextVideosPlaylist'
-import Switch from '@mui/material/Switch'
-import AntSwitch from './mySwitch'
+import AntSwitch from '../mySwitch'
 
 export default function MainPlayerContent() {
   return (
@@ -49,7 +47,7 @@ export default function MainPlayerContent() {
         </div>
         <div className={classes.authorContainer}>
             <div className={classes.author}>
-                <img src={require('../icons/fooddrink.jpg')}/>
+                <img src={require('../../icons/fooddrink.jpg')}/>
                 <div className={classes.authorInfo}>
                     <h2>Food & Drink</h2>
                     <span className={classes.published}>Published on 14 Jun 2019</span>

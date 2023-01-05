@@ -1,7 +1,7 @@
 import React from 'react';
-import channelIcon from '../icons/channelPic.jpg';
-import classes from '../styles/ChannelTitle.module.scss';
-import channelBg from '../images/channelBg.jpg'
+import channelIcon from '../../icons/channelPic.jpg';
+import classes from '../../styles/ChannelTitle.module.scss';
+import channelBg from '../../images/channelBg.jpg'
 
 export default function ChannelTitle() {
   return (

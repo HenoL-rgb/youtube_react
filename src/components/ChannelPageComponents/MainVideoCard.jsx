@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import classes from '../styles/mainVideoCard.module.scss'
+import classes from '../../styles/mainVideoCard.module.scss'
 
 export default function MainVideoCard({item}) {
   return (
     <div className={classes.container}>
         <div className={classes.videoContainer}>
-            <img src={require(`../images/${item.image}`)}></img>
+            <img src={require(`../../images/${item.image}`)}></img>
             <div className={classes.time}>{item.time}</div>
         </div>
         <div className={classes.text}>
