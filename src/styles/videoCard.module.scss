@@ -82,6 +82,14 @@
     }
 }
 
+.channel {
+    width: 100%;
+    row-gap: 8px;
+    & .videoContainer {
+        height: 150px;
+    }
+}
+
 .next {
     width: 367px;
     row-gap: 13px;

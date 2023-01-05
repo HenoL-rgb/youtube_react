@@ -3,7 +3,7 @@ import classes from '../styles/MobilePlayList.module.scss'
 import VideoCard from './VideoCard';
 
 export default function MobilePlayList({videos}) {
-    const width = 'full'
+    const width = 'channel'
   return (
     <div className={classes.container}>
         <ul className={classes.videos}>

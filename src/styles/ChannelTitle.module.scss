@@ -84,6 +84,7 @@
             & .text {
                 row-gap: 4px;
                 & h2{
+                    padding-top: 2px;
                     font-size: 20px;
                     line-height: 25px;
                 }
@@ -95,7 +96,7 @@
         & .controls {
             padding-left: 16px;
             position: relative;
-            top: -14px;
+            top: -16px;
             & svg {
                 display: none;
             }
