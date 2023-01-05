@@ -19,7 +19,9 @@ export default function MobilePlayerContent() {
                 <h2>Dude You Re Getting A Telescope</h2>
                 <div className={classes.info}>
                     <span>123k views</span>
-                    <div className={classes.controllers}>
+                </div>
+            </div>
+            <div className={classes.controllers}>
                         <button>
                             <Like/>
                             <span>123k</span>
@@ -33,8 +35,6 @@ export default function MobilePlayerContent() {
                             <span>Share</span>
                         </button>
                     </div>
-                </div>
-            </div>
         </div>
 
         <div className={classes.authorInfo}>
@@ -55,7 +55,7 @@ export default function MobilePlayerContent() {
                     <AntSwitch defaultChecked width={30} height={19} translate={12}/>
                 </div>
             </div>
-            <PlayerNextVideosPlaylist videos={playerNextVideos} width={'full'}/>
+            <PlayerNextVideosPlaylist videos={playerNextVideos} width={'nextMobile'}/>
             <Footer/>
         </div>
     </div>

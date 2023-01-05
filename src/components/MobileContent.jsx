@@ -9,7 +9,7 @@ import Footer from './Footer';
 export default function MobileContent() {
   return (
     <div>
-        <MobilePlayList videos={[...TopVideosData,...MidVideos,...BottomVideos]}></MobilePlayList>
+        <MobilePlayList videos={[...TopVideosData,...MidVideos,...BottomVideos]} width={'full'}></MobilePlayList>
         <Footer/>
     </div>
   )

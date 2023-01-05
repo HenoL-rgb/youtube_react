@@ -11,7 +11,7 @@
             padding: 0 16px;
             & .arrow {
                 position: absolute;
-                top: 13px;
+                top: 6px;
                 right: 20px;
             }
             & h2 {
@@ -25,6 +25,7 @@
             }
             & .info {
                 display: flex;
+                position: relative;
                 flex-direction: column;
                 row-gap: 20px;
                 align-items: flex-start;
@@ -37,32 +38,43 @@
                     color: #C2C2C2;
                     padding-top: 2px;
                 }
-                & .controllers {
-                    display: flex;
-                    align-self: center;
-                    align-items: center;
-                    column-gap: 10px;
-                    & button {
-                        display: flex;
-                        align-items: center;
-                        column-gap: 8px;
-                        outline: 0;
-                        border: 0;
-                        padding: 8px 16px;
-                        border-radius: 20px;
-                        background: rgba(235, 235, 235, 0.3);
-                        & span {
-                            font-weight: 400;
-                            font-size: 16px;
-                            line-height: 20px;
-                            color: #192646;
-                            padding: 0;
-                        }
-                    }
-                    & .more {
-                        padding-left: 30px;
-                    }
+                
+            }
+            
+        }
+        &  .controllers {
+            padding-left: 16px;
+            padding-top: 7px;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            overflow-x: scroll;
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            & button {
+                font-family: 'Mulish';
+                min-width: 100px;
+                min-height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 8px;
+                outline: 0;
+                border: 0;
+                padding: 8px 16px;
+                border-radius: 20px;
+                background: rgba(235, 235, 235, 0.3);
+                & span {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #192646;
+                    padding: 0;
                 }
+            }
+            & .more {
+                padding-left: 30px;
             }
         }
     }

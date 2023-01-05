@@ -27,7 +27,7 @@ export default function VideoCard({item, width}) {
                     <span>{item.views} views&nbsp;&nbsp;·&nbsp;&nbsp;{item.date}</span>     
                     <span id='author'>{item.author}</span>
                 </div>
-            : width === 'next' ?
+            : (width === 'next' || width === 'nextMobile') ?
                 <div className={classes.info}>
                     <span>{item.views} views</span>     
                     <span id='author'>{item.author}</span>

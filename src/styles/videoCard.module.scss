@@ -118,3 +118,11 @@
         }
     }
 }
+
+.nextMobile {
+    width: 100%;
+    row-gap: 8px;
+    & .videoContainer {
+        height: 150px;
+    }
+}

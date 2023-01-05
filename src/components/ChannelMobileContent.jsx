@@ -13,7 +13,7 @@ export default function ChannelMobileContent({isDesktop}) {
         <div className={classes.content}>
           <ChannelMenu isDesktop={false}/>
           <div className={classes.playList}>
-            <MobilePlayList videos={ChannelVideos} width={'small'}/>
+            <MobilePlayList videos={ChannelVideos} width={'channel'}/>
           </div>
           <Footer/>
         </div>
