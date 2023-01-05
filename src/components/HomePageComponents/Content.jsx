@@ -1,8 +1,8 @@
 import React from 'react'
-import MainContent from './MainContent'
-import Sidebar from './Sidebar'
-import classes from '../styles/content.module.css'
-import MobileContent from './MobileContent'
+import MainContent from '../MainContent'
+import Sidebar from '../Sidebar'
+import classes from '../../styles/content.module.css'
+import MobileContent from '../MobileContent'
 
 export default function Content({isDesktop}) {
   return (
